@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .redButton {
+            color: red;
+        }
+
+        .greenButton {
+            color: green;
+        }
+
+        .blueButton {
+            color: blue;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        function hiAlert() {
+            alert("Hi user!");
+        }
+
+        function printTextBox(textboxContent) {
+            alert(textboxContent);
+        }
+
+        function currentColour(colour) {
+            alert("you have chosen the " + colour + " button");
+
+        }
+
+    </script>
+
+
+    <table>
+        <tr>
+            <td>number of exercise</td>
+            <td>exercise</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>
+                <P><a href="https://www.bbc.co.uk/">Link to bbc homepage</a></P>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>
+                <P><a href="https://www.bbc.co.uk/" target="_blank" rel="noopener noreferrer">Link to bbc homepage to a
+                        new tab</a>
+                </P>
+            </td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>
+                <p><a href="https://www.youtube.com/"><img src="youtubeimg.jpg"></a></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td><button onclick="hiAlert()">Click me</button></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td><button onclick="hiAlert()">Click me</button></td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>
+                <form>
+                    <label for="textboxContent"> Enter text: </label>
+                    <input type="text" id="textboxContent" name="textboxContent">
+                    <button onclick="printTextBox(textboxContent.value)"> Click me</button>
+                </form>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>
+                <form>
+                    <div class="redButton">
+                        <input type="radio" name="colour" value="red" id="colour" onclick="currentColour(colour.value)">
+                        <label for="RED">red colour<br></label>
+                    </div>
+
+                    <div class="greenButton">
+                        <input type="radio" name="colour" value="green" id="colour"
+                            onclick="currentColour(colour.value)">
+                        <label for="GREEN">green colour<br></label>
+                    </div>
+
+                    <div class="blueButton">
+                        <input type="radio" name="colour" value="blue" id="colour"
+                            onclick="currentColour(colour.value)">
+                        <label for="BLUE">blue colour</label>
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
